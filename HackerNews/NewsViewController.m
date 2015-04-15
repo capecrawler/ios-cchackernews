@@ -57,9 +57,13 @@
 }
 
 
+- (NSString *) createApiForNewsDetails: (NSString *) newsId{
+    return [NSString stringWithFormat:@"https://hacker-news.firebaseio.com/v0/item/%@.json?print=pretty", newsId];
+}
+
 - (void) runGetNewsDetails: (NSString *) newsId success:(void (^)())success
                    failure:(void (^)())failure{
-    NSString * api = [NSString stringWithFormat:@"https://hacker-news.firebaseio.com/v0/item/%@.json?print=pretty", newsId];
+    NSString * api = [self createApiForNewsDetails:newsId];
     AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
     self.operation = [manager GET:api parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         News * news = [[News alloc] initWithDictionary:responseObject];
@@ -76,7 +80,6 @@
 }
 
 - (void) loadNews:(NSInteger) count{
-    NSLog(@"loading news: %ld", count);
     if (count < 10){
         [self runGetNewsDetails:[self.newsId[count] stringValue] success:^{
             [self loadNews: count+1];

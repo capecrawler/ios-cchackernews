@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "NewsViewController.h"
+
+
+
+@interface NewsViewController(Tests)
+
+
+- (NSString *) createApiForNewsDetails: (NSString *) newsId;
+
+@end
+
 
 @interface HackerNewsTests : XCTestCase
 
@@ -25,16 +36,25 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
+//- (void)testExample {
+//    // This is an example of a functional test case.
+//    XCTAssert(YES, @"Pass");
+//}
+//
+//- (void)testPerformanceExample {
+//    // This is an example of a performance test case.
+//    [self measureBlock:^{
+//        // Put the code you want to measure the time of here.
+//    }];
+//}
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+
+
+- (void) testAPIForNewsDetails{
+    NewsViewController * controller = [[NewsViewController alloc] init];
+    NSString * api = [controller createApiForNewsDetails:@"9376391"];
+    NSString * correctAPI = @"https://hacker-news.firebaseio.com/v0/item/9376391.json?print=pretty";
+    XCTAssertEqualObjects(api, correctAPI, @"API function error");
 }
 
 @end
