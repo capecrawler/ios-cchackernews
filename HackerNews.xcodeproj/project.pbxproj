@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0313D50E06CE481810EF6F84 /* libPods-HackerNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C8ED21DC1801FBA7FB0ED5 /* libPods-HackerNews.a */; };
+		AC39B7D31ADE28E100CF89A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC39B7D21ADE28E100CF89A1 /* main.m */; };
+		AC39B7D61ADE28E100CF89A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC39B7D51ADE28E100CF89A1 /* AppDelegate.m */; };
+		AC39B7D91ADE28E100CF89A1 /* HackerNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC39B7D71ADE28E100CF89A1 /* HackerNews.xcdatamodeld */; };
+		AC39B7DF1ADE28E100CF89A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC39B7DD1ADE28E100CF89A1 /* Main.storyboard */; };
+		AC39B7E11ADE28E100CF89A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC39B7E01ADE28E100CF89A1 /* Images.xcassets */; };
+		AC39B7E41ADE28E100CF89A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC39B7E21ADE28E100CF89A1 /* LaunchScreen.xib */; };
+		AC39B7F01ADE28E100CF89A1 /* HackerNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC39B7EF1ADE28E100CF89A1 /* HackerNewsTests.m */; };
+		ACB5F4941ADE2EF2009E5AF1 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB5F4931ADE2EF2009E5AF1 /* NewsViewController.m */; };
+		ACB5F4971ADE3424009E5AF1 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB5F4961ADE3424009E5AF1 /* News.m */; };
+		ACB5F49A1ADE356C009E5AF1 /* RemoteData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB5F4991ADE356C009E5AF1 /* RemoteData.m */; };
+		ACB5F49D1ADE3726009E5AF1 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB5F49C1ADE3726009E5AF1 /* NewsCell.m */; };
+		ACF908751ADE40B300B27034 /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF908741ADE40B300B27034 /* WebBrowserViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC39B7EA1ADE28E100CF89A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC39B7C51ADE28E100CF89A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC39B7CC1ADE28E100CF89A1;
+			remoteInfo = HackerNews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1541B91A8A91B986A910DBA3 /* Pods-HackerNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackerNews/Pods-HackerNews.release.xcconfig"; sourceTree = "<group>"; };
+		3500DA810E4213A1CF1296C0 /* Pods-HackerNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackerNews/Pods-HackerNews.debug.xcconfig"; sourceTree = "<group>"; };
+		45C8ED21DC1801FBA7FB0ED5 /* libPods-HackerNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackerNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC39B7CD1ADE28E100CF89A1 /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC39B7D11ADE28E100CF89A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC39B7D21ADE28E100CF89A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC39B7D41ADE28E100CF89A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC39B7D51ADE28E100CF89A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC39B7D81ADE28E100CF89A1 /* HackerNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HackerNews.xcdatamodel; sourceTree = "<group>"; };
+		AC39B7DE1ADE28E100CF89A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC39B7E01ADE28E100CF89A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AC39B7E31ADE28E100CF89A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AC39B7E91ADE28E100CF89A1 /* HackerNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC39B7EE1ADE28E100CF89A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC39B7EF1ADE28E100CF89A1 /* HackerNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerNewsTests.m; sourceTree = "<group>"; };
+		ACB5F4921ADE2EF2009E5AF1 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		ACB5F4931ADE2EF2009E5AF1 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		ACB5F4951ADE3424009E5AF1 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		ACB5F4961ADE3424009E5AF1 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		ACB5F4981ADE356C009E5AF1 /* RemoteData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteData.h; sourceTree = "<group>"; };
+		ACB5F4991ADE356C009E5AF1 /* RemoteData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteData.m; sourceTree = "<group>"; };
+		ACB5F49B1ADE3726009E5AF1 /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		ACB5F49C1ADE3726009E5AF1 /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		ACF908731ADE40B300B27034 /* WebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
+		ACF908741ADE40B300B27034 /* WebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC39B7CA1ADE28E100CF89A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0313D50E06CE481810EF6F84 /* libPods-HackerNews.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC39B7E61ADE28E100CF89A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27817A4507D5149C87839E28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45C8ED21DC1801FBA7FB0ED5 /* libPods-HackerNews.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC39B7C41ADE28E100CF89A1 = {
+			isa = PBXGroup;
+			children = (
+				AC39B7CF1ADE28E100CF89A1 /* HackerNews */,
+				AC39B7EC1ADE28E100CF89A1 /* HackerNewsTests */,
+				AC39B7CE1ADE28E100CF89A1 /* Products */,
+				D8B64A6BB3951179E9C5FB77 /* Pods */,
+				27817A4507D5149C87839E28 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC39B7CE1ADE28E100CF89A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC39B7CD1ADE28E100CF89A1 /* HackerNews.app */,
+				AC39B7E91ADE28E100CF89A1 /* HackerNewsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC39B7CF1ADE28E100CF89A1 /* HackerNews */ = {
+			isa = PBXGroup;
+			children = (
+				AC39B7D41ADE28E100CF89A1 /* AppDelegate.h */,
+				AC39B7D51ADE28E100CF89A1 /* AppDelegate.m */,
+				AC39B7DD1ADE28E100CF89A1 /* Main.storyboard */,
+				AC39B7E01ADE28E100CF89A1 /* Images.xcassets */,
+				AC39B7E21ADE28E100CF89A1 /* LaunchScreen.xib */,
+				AC39B7D71ADE28E100CF89A1 /* HackerNews.xcdatamodeld */,
+				AC39B7D01ADE28E100CF89A1 /* Supporting Files */,
+				ACB5F4921ADE2EF2009E5AF1 /* NewsViewController.h */,
+				ACB5F4931ADE2EF2009E5AF1 /* NewsViewController.m */,
+				ACB5F4951ADE3424009E5AF1 /* News.h */,
+				ACB5F4961ADE3424009E5AF1 /* News.m */,
+				ACB5F4981ADE356C009E5AF1 /* RemoteData.h */,
+				ACB5F4991ADE356C009E5AF1 /* RemoteData.m */,
+				ACB5F49B1ADE3726009E5AF1 /* NewsCell.h */,
+				ACB5F49C1ADE3726009E5AF1 /* NewsCell.m */,
+				ACF908731ADE40B300B27034 /* WebBrowserViewController.h */,
+				ACF908741ADE40B300B27034 /* WebBrowserViewController.m */,
+			);
+			path = HackerNews;
+			sourceTree = "<group>";
+		};
+		AC39B7D01ADE28E100CF89A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC39B7D11ADE28E100CF89A1 /* Info.plist */,
+				AC39B7D21ADE28E100CF89A1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC39B7EC1ADE28E100CF89A1 /* HackerNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC39B7EF1ADE28E100CF89A1 /* HackerNewsTests.m */,
+				AC39B7ED1ADE28E100CF89A1 /* Supporting Files */,
+			);
+			path = HackerNewsTests;
+			sourceTree = "<group>";
+		};
+		AC39B7ED1ADE28E100CF89A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC39B7EE1ADE28E100CF89A1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8B64A6BB3951179E9C5FB77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3500DA810E4213A1CF1296C0 /* Pods-HackerNews.debug.xcconfig */,
+				1541B91A8A91B986A910DBA3 /* Pods-HackerNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC39B7CC1ADE28E100CF89A1 /* HackerNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC39B7F31ADE28E100CF89A1 /* Build configuration list for PBXNativeTarget "HackerNews" */;
+			buildPhases = (
+				28CA793FCF69352E15065BF8 /* Check Pods Manifest.lock */,
+				AC39B7C91ADE28E100CF89A1 /* Sources */,
+				AC39B7CA1ADE28E100CF89A1 /* Frameworks */,
+				AC39B7CB1ADE28E100CF89A1 /* Resources */,
+				8103F84211004D334D979B67 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackerNews;
+			productName = HackerNews;
+			productReference = AC39B7CD1ADE28E100CF89A1 /* HackerNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC39B7E81ADE28E100CF89A1 /* HackerNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC39B7F61ADE28E100CF89A1 /* Build configuration list for PBXNativeTarget "HackerNewsTests" */;
+			buildPhases = (
+				AC39B7E51ADE28E100CF89A1 /* Sources */,
+				AC39B7E61ADE28E100CF89A1 /* Frameworks */,
+				AC39B7E71ADE28E100CF89A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC39B7EB1ADE28E100CF89A1 /* PBXTargetDependency */,
+			);
+			name = HackerNewsTests;
+			productName = HackerNewsTests;
+			productReference = AC39B7E91ADE28E100CF89A1 /* HackerNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC39B7C51ADE28E100CF89A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = capecrawler;
+				TargetAttributes = {
+					AC39B7CC1ADE28E100CF89A1 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					AC39B7E81ADE28E100CF89A1 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = AC39B7CC1ADE28E100CF89A1;
+					};
+				};
+			};
+			buildConfigurationList = AC39B7C81ADE28E100CF89A1 /* Build configuration list for PBXProject "HackerNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC39B7C41ADE28E100CF89A1;
+			productRefGroup = AC39B7CE1ADE28E100CF89A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC39B7CC1ADE28E100CF89A1 /* HackerNews */,
+				AC39B7E81ADE28E100CF89A1 /* HackerNewsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC39B7CB1ADE28E100CF89A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC39B7DF1ADE28E100CF89A1 /* Main.storyboard in Resources */,
+				AC39B7E41ADE28E100CF89A1 /* LaunchScreen.xib in Resources */,
+				AC39B7E11ADE28E100CF89A1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC39B7E71ADE28E100CF89A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28CA793FCF69352E15065BF8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8103F84211004D334D979B67 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackerNews/Pods-HackerNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC39B7C91ADE28E100CF89A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB5F4971ADE3424009E5AF1 /* News.m in Sources */,
+				AC39B7D61ADE28E100CF89A1 /* AppDelegate.m in Sources */,
+				AC39B7D91ADE28E100CF89A1 /* HackerNews.xcdatamodeld in Sources */,
+				ACB5F49D1ADE3726009E5AF1 /* NewsCell.m in Sources */,
+				ACB5F49A1ADE356C009E5AF1 /* RemoteData.m in Sources */,
+				ACB5F4941ADE2EF2009E5AF1 /* NewsViewController.m in Sources */,
+				ACF908751ADE40B300B27034 /* WebBrowserViewController.m in Sources */,
+				AC39B7D31ADE28E100CF89A1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC39B7E51ADE28E100CF89A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC39B7F01ADE28E100CF89A1 /* HackerNewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC39B7EB1ADE28E100CF89A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC39B7CC1ADE28E100CF89A1 /* HackerNews */;
+			targetProxy = AC39B7EA1ADE28E100CF89A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC39B7DD1ADE28E100CF89A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC39B7DE1ADE28E100CF89A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC39B7E21ADE28E100CF89A1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC39B7E31ADE28E100CF89A1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC39B7F11ADE28E100CF89A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC39B7F21ADE28E100CF89A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC39B7F41ADE28E100CF89A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3500DA810E4213A1CF1296C0 /* Pods-HackerNews.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HackerNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC39B7F51ADE28E100CF89A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1541B91A8A91B986A910DBA3 /* Pods-HackerNews.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HackerNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC39B7F71ADE28E100CF89A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HackerNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerNews.app/HackerNews";
+			};
+			name = Debug;
+		};
+		AC39B7F81ADE28E100CF89A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HackerNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerNews.app/HackerNews";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC39B7C81ADE28E100CF89A1 /* Build configuration list for PBXProject "HackerNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC39B7F11ADE28E100CF89A1 /* Debug */,
+				AC39B7F21ADE28E100CF89A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC39B7F31ADE28E100CF89A1 /* Build configuration list for PBXNativeTarget "HackerNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC39B7F41ADE28E100CF89A1 /* Debug */,
+				AC39B7F51ADE28E100CF89A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC39B7F61ADE28E100CF89A1 /* Build configuration list for PBXNativeTarget "HackerNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC39B7F71ADE28E100CF89A1 /* Debug */,
+				AC39B7F81ADE28E100CF89A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC39B7D71ADE28E100CF89A1 /* HackerNews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC39B7D81ADE28E100CF89A1 /* HackerNews.xcdatamodel */,
+			);
+			currentVersion = AC39B7D81ADE28E100CF89A1 /* HackerNews.xcdatamodel */;
+			path = HackerNews.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC39B7C51ADE28E100CF89A1 /* Project object */;
+}
